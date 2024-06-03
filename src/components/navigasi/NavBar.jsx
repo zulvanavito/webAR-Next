@@ -21,10 +21,10 @@ export default function NavBar() {
             </Button>
           </Link>
         </div>
-        <Button className="bg-primaryCustom-500 font-sans rounded-lg font-medium hover:bg-primaryCustom-700">
+        <Link href={"/signup"}><Button className="bg-primaryCustom-500 font-sans rounded-lg font-medium hover:bg-primaryCustom-700">
           Sign Up Free
           <MoveRight className="ml-2" color="#F5F7F8" strokeWidth={2} />
-        </Button>
+        </Button></Link>
       </div>
     </nav>
   );
