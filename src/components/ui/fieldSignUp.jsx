@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form";
 import { Button } from "./button";
 import { Checkbox } from "./checkbox";
+import Link from "next/link";
 
 const FieldSignUp = () => {
   const {
@@ -51,9 +52,12 @@ const FieldSignUp = () => {
         </div>
       </div>
       <div className="mb-4">
+        <div className="flex justify-between font-medium">
         <label className="block text-gray-700 mb-1" htmlFor="password">
           Password<sup className="text-red-500"> *</sup>
         </label>
+        <span className="text-red-500 hover:text-red-400 hover:underline text-sm">Forgot Password?</span>
+        </div>
         <input
           className="shadow-md w-full px-3 py-2 border rounded-md"
           type="password"
@@ -80,6 +84,16 @@ const FieldSignUp = () => {
       >
         Sign Up
       </Button>
+      <div className="flex justify-center justify-items-center mt-5">
+        <p className="font-medium text-sm">
+          Do you already have an account?
+          <Link href={"/login"}>
+            <span className="font-medium text-sm ml-1 text-primaryCustom-500 hover:text-primaryCustom-400 hover:underline">
+              Log in
+            </span>
+          </Link>
+        </p>
+      </div>
     </form>
   );
 };

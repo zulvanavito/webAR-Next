@@ -1,5 +1,5 @@
 "use client";
-import { date } from "zod";
+import Link from "next/link";
 import { Button } from "./button";
 import { Switch } from "./switch";
 import { useForm } from "react-hook-form";
@@ -11,7 +11,7 @@ const FieldSignIn = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (date) => {
+  const onSubmit = (data) => {
     console.log(data);
   };
 
@@ -30,7 +30,9 @@ const FieldSignIn = () => {
           />
           <div>
             {errors.email && (
-              <span className="text-red-500 text-xs">Email tidak boleh kosong!</span>
+              <span className="text-red-500 text-xs">
+                Email tidak boleh kosong!
+              </span>
             )}
           </div>
         </div>
@@ -56,7 +58,11 @@ const FieldSignIn = () => {
             Remember Me
           </span>
         </label>
-        <span className="text-sm text-red-500">Forget Password?</span>
+        <Link href={""} className="group">
+          <span className="text-sm text-red-500 group-hover:text-red-400 group-hover:underline ">
+            Forget Password?
+          </span>
+        </Link>
       </div>
       <Button
         type="submit"
