@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Button } from "./button";
 import { Switch } from "./switch";
 import { useForm } from "react-hook-form";
@@ -57,9 +58,11 @@ const FieldSignIn = () => {
             Remember Me
           </span>
         </label>
-        <span className="text-sm text-red-500 hover:text-red-400">
-          Forget Password?
-        </span>
+        <Link href={""} className="group">
+          <span className="text-sm text-red-500 group-hover:text-red-400 group-hover:underline ">
+            Forget Password?
+          </span>
+        </Link>
       </div>
       <Button
         type="submit"
