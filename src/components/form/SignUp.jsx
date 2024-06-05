@@ -11,10 +11,10 @@ const SignUp = () => {
   return (
     <div className="min-h-screen flex items-center justify-self-center">
       <div className="container max-w-md w-fit p-6 ">
+        <Link href={"/"}>
+          <BackButton />
+        </Link>
         <div className="flex flex-col justify-start gap-2">
-          <Link href={"/"}>
-            <BackButton />
-          </Link>
           <span className="mt-4 text-left font-font-montserrat font-extrabold text-6xl tracking-wide">
             Sign Up
           </span>
@@ -40,7 +40,7 @@ const SignUp = () => {
           <span className="mx-4 text-primaryCustom-200">Or</span>
           <div className="flex-grow border-t border-primaryCustom-100"></div>
         </div>
-        <FieldSignUp/>
+        <FieldSignUp />
       </div>
     </div>
   );
