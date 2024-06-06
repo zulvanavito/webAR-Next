@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run clean:webpack-cache && next build",
+    "build": "npm run",
     "start": "next start",
     "lint": "next lint"
   },
