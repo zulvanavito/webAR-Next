@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import { Button } from "../ui/button";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import MenuNav from "../menu-nav/MenuNav";
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-between mx-5 mt-3 items-center">
+    <nav className="flex justify-between mx-5 mt-3 items-center bg-white">
       <Image
         alt="Logo Ganesha Inovasi Teknologi"
         src="/images/test_logo.png"
