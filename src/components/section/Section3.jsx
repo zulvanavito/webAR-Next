@@ -4,7 +4,7 @@ import ArrowRight from "../ui/ArrowRight";
 
 const Section3 = () => {
   return (
-    <div id="solutions" className="flex justify-between mx-12 ">
+    <div id="about" className="flex justify-between mx-12 ">
       <div className="mt-36 mb-36 w-fit p-10 ">
         <Image
           className=""

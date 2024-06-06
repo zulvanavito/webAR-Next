@@ -16,10 +16,10 @@ const MenuNav = () => {
             <Link href="#services">Services</Link>
           </li>
           <li className="hover:underline">
-            <Link href="/">About</Link>
+            <Link href="#about">About</Link>
           </li>
           <li className="hover:underline">
-            <Link href="/">Pricing</Link>
+            <Link href="#komunitas">Pricing</Link>
           </li>
         </ul>
       </nav>
