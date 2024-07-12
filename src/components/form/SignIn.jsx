@@ -4,8 +4,6 @@ import Google from "../ui/svg/Google";
 import Facebook from "../ui/svg/Facebook";
 import BackButton from "../ui/BackButton";
 import Link from "next/link";
-import FormField from "../ui/fieldSignIn";
-import FieldSignUp from "../ui/fieldSignUp";
 import FieldSignIn from "../ui/fieldSignIn";
 
 const SignIn = () => {
@@ -43,7 +41,10 @@ const SignIn = () => {
         </div>
         <FieldSignIn />
         <div className="flex justify-center mt-5">
-          <Link className="font-medium text-primaryCustom-500 text-sm hover:text-primaryCustom-400 hover:underline" href={"/signup"}>
+          <Link
+            className="font-medium text-primaryCustom-500 text-sm hover:text-primaryCustom-400 hover:underline"
+            href={"/signup"}
+          >
             <p>Create an account?</p>
           </Link>
         </div>
